@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "magicmuskets",
+	"version": "${version}",
+	"name": "Nikos Magic Muskets",
+	"description": "This mod adds muskets and flintlock pistols with special enchantments and unique upgrades which can me made at an imbuing station",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/magicmuskets/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.niko.magicmuskets.MagicMuskets"
+		],
+		"client": [
+			"net.niko.magicmuskets.MagicMusketsClient"
+		],
+		"fabric-datagen": [
+			"net.niko.magicmuskets.MagicMusketsDataGenerator"
+		]
+	},
+	"mixins": [
+		"magicmuskets.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
